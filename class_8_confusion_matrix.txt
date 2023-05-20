@@ -1,0 +1,39 @@
+8th class - 25th December
+
+now we need to summarize how each method perfromed on testing data.
+
+one way to find this is by creating a Confusion Matirx for each method.
+
+the rows in a confusion matrix correspond to what the machine learning algorithm predicted...
+
+and the columns correspond to the known truth.
+
+if two there are only two categories to choose from "has heart disease" or "does not have heart disease"...
+
+	- then the top left corner contains "True Positives"
+		- these are patients that had heart disease that were correctly identified by the 			algorithms
+	- the "True Negatives are in the bottom right-hand corner"
+		- these are the patients that did not have heart disease that were correctly 			identified by the algorithm.
+	- the bottom left-hand corner contains the "False Negatives"
+		- False Negatives are when a patient has heart disease, BUT the algorithm said 			they didn't.
+	- lastly, the top right-hand cornet contains the "False Positives"
+		- False Positives are patients that do not have heart disease, but the algorithm 			says they do.
+	
+- the number along the diagonal (the green boxes) tell us how many times the samples were correctly classified.
+
+- the numbers not on the diagonal (the red boxes) are samples the algorithm messed up.
+
+
+if there are more than 2 options in COnfusion matrix:
+	then with 3 rows and 3 columns (example:)
+	
+	- just like before, the diagonal are where the machine learning algorithm did the 		right thing
+	- every other cell algorithm messed up
+	
+Ultimately:
+	the size of the confusion matrix is determined by the number of things we want to predict.
+
+
+https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62
+
+
